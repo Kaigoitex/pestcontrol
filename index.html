@@ -24,10 +24,13 @@
       background: linear-gradient(to right, #0f9b0f, #007f5f);
       color: #ffffff;
       text-align: center;
-      padding: 50px 20px 30px;
-      font-size: 2.2em;
-      font-weight: 800;
-      letter-spacing: 0.5px;
+      padding: 60px 20px 40px;
+      font-size: 2.6em;
+      font-weight: 900;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      line-height: 1.2;
+      box-shadow: inset 0 -6px 0 rgba(255,255,255,0.1);
     }
 
     .video-container {
@@ -46,29 +49,42 @@
     }
 
     .section {
-      max-width: 1000px;
+      max-width: 1200px;
       margin: 0 auto;
       padding: 40px 20px;
     }
 
-    .block {
+    .card-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
       background-color: #f1fbf4;
-      margin: 30px 0;
-      padding: 30px 25px;
+      flex: 1 1 30%;
+      min-width: 280px;
+      padding: 30px 20px;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
       text-align: center;
+      transition: transform 0.3s ease;
     }
 
-    .block h2 {
-      font-size: 1.6em;
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      font-size: 1.3em;
       margin-bottom: 12px;
       color: #007f5f;
     }
 
-    .block p {
-      font-size: 1.05em;
-      line-height: 1.6;
+    .card p {
+      font-size: 1em;
+      line-height: 1.5;
     }
 
     .button {
@@ -77,7 +93,7 @@
       color: white;
       text-align: center;
       padding: 16px 32px;
-      margin: 40px auto;
+      margin: 50px auto;
       border-radius: 8px;
       text-decoration: none;
       font-size: 1.2em;
@@ -103,8 +119,9 @@
         padding: 40px 15px;
       }
 
-      .block h2 {
-        font-size: 1.4em;
+      .card-grid {
+        flex-direction: column;
+        align-items: center;
       }
 
       iframe {
@@ -118,7 +135,7 @@
   <img src="https://itexsouthflorida.com/wp-content/uploads/2023/11/itex-logo-white.png" alt="ITEX Logo" class="logo" />
 
   <div class="header">
-    Get More Clients for Your Pest Control Business — Without Spending Cash
+    Grow Your Pest Control Business<br/>Without Spending Extra Cash
   </div>
 
   <div class="video-container">
@@ -126,19 +143,19 @@
   </div>
 
   <div class="section">
-    <div class="block">
-      <h2>Tap Into a New Revenue Stream</h2>
-      <p>We have hundreds of local business owners — restaurants, landlords, property managers — looking for pest control services. Instead of spending cash on ads, get referred clients through ITEX trade dollars.</p>
-    </div>
-
-    <div class="block">
-      <h2>Keep More Cash in Your Business</h2>
-      <p>Use the ITEX dollars you earn to pay for printing, auto repairs, marketing, fuel, meals, and employee rewards. You’ll save cash and grow at the same time.</p>
-    </div>
-
-    <div class="block">
-      <h2>Proven Model Used by 20,000+ Businesses</h2>
-      <p>From small businesses to multi-location service providers, ITEX is a trusted barter platform helping business owners grow smarter — without relying only on cash flow.</p>
+    <div class="card-grid">
+      <div class="card">
+        <h2>New Leads, No Cash Ads</h2>
+        <p>Tap into our network of local business owners actively searching for pest control services. Get booked fast and build repeat clients.</p>
+      </div>
+      <div class="card">
+        <h2>Spend Less, Earn More</h2>
+        <p>Use your ITEX dollars for fuel, printing, marketing, staff perks, meals and more — all while preserving your cash flow.</p>
+      </div>
+      <div class="card">
+        <h2>Trusted by 20,000+</h2>
+        <p>ITEX supports thousands of small businesses just like yours. Pest control pros across the country are growing using barter trade.</p>
+      </div>
     </div>
   </div>
 
